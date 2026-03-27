@@ -32,7 +32,6 @@ The main MATLAB files are:
 - `rothc_rho.m` – environmental multiplier for RothC decomposition
 - `rothc_temp_factor_centered.m` – temperature modifier centered on a reference mean annual temperature
 
-This organization is consistent with the MATLAB code description included in Deliverable D4, which contains dedicated sections for the main script, parameter definition, climate generation, state initialization, simulation loop, fire module, spread routine, monthly coupled update, vegetation transition rates, carbon inputs, and RothC environmental functions. 
 
 ## Model overview
 
@@ -48,7 +47,7 @@ At each month, the workflow is:
 5. update soil carbon pools;
 6. store time series and optional map snapshots.
 
-This monthly structure is consistent with the integrated-model simulations described in Deliverable D4, which are conducted on a regular grid with monthly time step for the Spotorno application. 
+
 
 ## Vegetation module
 
@@ -60,7 +59,7 @@ Vegetation is described by fractional covers:
 - `P` = seeders / intermediate woody vegetation
 - `H` = resprouters / mature woody vegetation
 
-The vegetation module simulates succession among these classes through transition rates such as bare-soil-to-grass, grass-to-shrub, shrub-to-woody classes, and seeders-to-resprouters. In the integrated formulation presented in Deliverable D4, the long-term undisturbed tendency is toward a closed vegetation state dominated by resprouters. In the no-fire equilibrium simulation for Spotorno, the model converges toward `(B, G, S, P, H) = (0, 0, 0, 0, 1)`, i.e. a closed successional state dominated by resprouters. 
+The vegetation module simulates succession among these classes through transition rates such as bare-soil-to-grass, grass-to-shrub, shrub-to-woody classes, and seeders-to-resprouters. In the formulation the long-term undisturbed tendency is toward a closed vegetation state dominated by resprouters. In the no-fire equilibrium simulation for Spotorno, the model converges toward `(B, G, S, P, H) = (0, 0, 0, 0, 1)`, i.e. a closed successional state dominated by resprouters. 
 
 In this codebase, vegetation transition rates are modulated by a soil-carbon feedback and can also be optionally modulated by soil moisture. After each monthly update, vegetation fractions are constrained to remain non-negative and renormalized to sum to one.
 
@@ -72,7 +71,7 @@ The fire module includes:
 - stochastic ignition,
 - optional deterministic local spread to neighboring cells.
 
-In Deliverable D4, the monthly fire probability is described as depending on a baseline annual fire parameter, vegetation-dependent flammability, seasonality, and soil-moisture limitation. Fire spread is implemented as threshold-based propagation to neighboring cells, iterated up to a prescribed maximum number of steps; in the Spotorno simulations described in D4, an 8-neighbor propagation rule is used with a maximum of 10 iterations. 
+The monthly fire probability is described as depending on a baseline annual fire parameter, vegetation-dependent flammability, seasonality, and soil-moisture limitation. Fire spread is implemented as threshold-based propagation to neighboring cells, iterated up to a prescribed maximum number of steps; in the simulations an 8-neighbor propagation rule is used with a maximum of 10 iterations. 
 
 The project sheet also states that CRITICALFIRE can incorporate either a simplified propagation routine or a more refined propagation model such as Propagator. 
 
