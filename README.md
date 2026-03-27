@@ -5,7 +5,7 @@ CRITICALFIRE is a MATLAB implementation of an integrated Vegetation–Fire–Soi
 
 ## Project context
 
-CRITICALFIRE was conceived to assess how Mediterranean soil–vegetation systems, viewed as a key component of the terrestrial Critical Zone, respond to wildfires, drought, and management strategies under environmental change. The project sheet describes it as a simplified model for evaluating ecosystem response in Mediterranean environments, with particular attention to carbon storage capacity and to the influence of soil and vegetation characteristics on wildfire risk, including the possible effects of management actions. 
+CRITICALFIRE was conceived to assess how Mediterranean soil–vegetation systems, viewed as a key component of the terrestrial Critical Zone, respond to wildfires, drought, and management strategies under environmental change. It is a simplified model for evaluating ecosystem response in Mediterranean environments, with particular attention to carbon storage capacity and to the influence of soil and vegetation characteristics on wildfire risk, including the possible effects of management actions. 
 
 The tool is intended for both researchers, who may use it to simulate the long-term dynamics of the soil–vegetation–fire system under climate and management change, and land managers, who may use it to explore the possible effectiveness of alternative management strategies on ecosystem dynamics and health. The project documentation also states an important limitation: the model is simplified and is meant to provide scenario-based indications on ecosystem and soil dynamics, not event-specific fire forecasts.
 
