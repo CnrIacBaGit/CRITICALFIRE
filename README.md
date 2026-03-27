@@ -13,7 +13,7 @@ The tool is intended for both researchers, who may use it to simulate the long-t
 
 The model couples three interacting components: a vegetation succession module, a soil carbon dynamics module based on RothC, and a wildfire ignition and propagation module. According to the project sheet, the integrated framework explicitly represents reciprocal interactions between vegetation and soil, while including wildfire ignition, spread, and effects on both subsystems. The intended spatial scale is typically between 20 and 100 m, with monthly temporal resolution, while fires occur on faster time scales within the reference month. 
 
-In the formulation documented in Deliverable D3, vegetation is represented through fractional covers of bare soil (`B`), grass (`G`), shrubs (`S`), seeders / woody pioneers (`P`), and resprouters / mature woody vegetation (`H`). Soil carbon is represented through RothC-style pools: DPM, RPM, BIO, HUM, plus the inert pool IOM. Fire affects vegetation by removing biomass according to class-dependent severity parameters and affects the soil by removing part of the active organic carbon pools. 
+In the formulation documented in Deliverable D3 (https://zenodo.org/records/19257475), vegetation is represented through fractional covers of bare soil (`B`), grass (`G`), shrubs (`S`), seeders / woody pioneers (`P`), and resprouters / mature woody vegetation (`H`). Soil carbon is represented through RothC-style pools: DPM, RPM, BIO, HUM, plus the inert pool IOM. Fire affects vegetation by removing biomass according to class-dependent severity parameters and affects the soil by removing part of the active organic carbon pools. 
 
 ## Repository structure
 
