@@ -1,5 +1,5 @@
 # CRITICALFIRES
-CRITICALFIRES is a software demonstrator developed within the RETURN project, Spoke 4–VS4. It is an integrated model for Critical Zone–Carbon–Wildfire interaction, designed to assess how Mediterranean soil–vegetation systems respond to wildfires, drought, and management strategies under environmental change.
+CRITICALFIRES is a software demonstrator developed within the RETURN project, Spoke 4–VS4 (RETURN Extended Partnership, https://www.fondazionereturn.it/en/). It is an integrated model for Critical Zone–Carbon–Wildfire interaction, designed to assess how Mediterranean soil–vegetation systems respond to wildfires, drought, and management strategies under environmental change.
 
 CRITICALFIRES is a MATLAB implementation of an integrated Vegetation–Fire–Soil model designed to simulate the coupled dynamics of vegetation succession, wildfire ignition/propagation, and soil organic carbon using a RothC-style framework. The model is spatially explicit on a regular grid and uses a monthly time step. 
 
